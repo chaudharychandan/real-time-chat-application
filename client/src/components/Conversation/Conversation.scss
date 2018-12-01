@@ -1,0 +1,12 @@
+.Conversation {
+	display: flex;
+	flex-direction: column;
+	.ChatHistory {
+		flex: 1 1 auto;
+		overflow-y: auto;
+		min-height: 0px;
+	}
+	.ComposeBox {
+		height: 80px;
+	}
+}

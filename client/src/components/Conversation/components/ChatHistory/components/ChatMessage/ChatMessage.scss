@@ -1,0 +1,25 @@
+.ChatMessage {
+	margin: 10px 0;
+	&.sent {
+		text-align: right;
+		& > span{
+			background: #dcf8c6;
+		}
+	}
+	&.recieved {
+		text-align: left;
+		& > span {
+			background: #fff;
+		}
+	}
+	& > span {
+		padding: 5px 10px;
+		display: inline-block;
+		border-radius: 3px;
+		line-height: 22px;
+		.message-time {
+			font-size: 10px;
+			color: #757575;
+		}
+	}
+}

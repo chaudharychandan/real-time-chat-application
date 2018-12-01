@@ -1,0 +1,11 @@
+.FriendsContainer {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	.List {
+		flex: 1 1 auto;
+		overflow-y: auto;
+		min-height: 0px;
+		padding-right: 5px;
+	}
+}
