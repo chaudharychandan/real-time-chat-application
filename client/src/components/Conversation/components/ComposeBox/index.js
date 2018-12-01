@@ -33,7 +33,7 @@ class ComposeBox extends Component {
 		return (
 			<div className="ComposeBox">
 				<form onSubmit={this.onFormSubmit}>
-					<input type="text" onChange={this.onMessageChange} value={message} />
+					<input type="text" autoFocus onChange={this.onMessageChange} value={message} />
 				</form>
 			</div>
 		);

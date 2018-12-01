@@ -7,6 +7,11 @@ export const getTime = (timestamp) => {
   return time.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true });
 };
 
+export const getDate = (timestamp) => {
+  const time = new Date(timestamp);
+  return time.toLocaleDateString('en-Us');
+}
+
 export const loadState = () => {
   try {
     const serializedState = sessionStorage.getItem('postman_whatsapp_web');

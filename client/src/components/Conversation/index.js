@@ -12,7 +12,7 @@ class Conversation extends Component {
 			<div className="Conversation">
 				<PersonInfo person={friend} />
 				<ChatHistory friend={friend} />
-				<ComposeBox />
+				<ComposeBox key={friend.id} />
 			</div>
 		)
 	}
