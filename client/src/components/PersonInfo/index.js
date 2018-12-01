@@ -1,12 +1,16 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 
 import './PersonInfo.scss';
 
 const PersonInfo = (props) => {
 	const { person } = props;
+	if(person) {
+		var { name, avatar } = person;
+	}
+
 	return (
 		<div className="PersonInfo">
-			{ person ? <div>{ person.name }</div> : null }
+			{ person ? <Fragment><img src={avatar} alt={name} /> <span>{ name }</span></Fragment> : null }
 		</div>
 	);
 }

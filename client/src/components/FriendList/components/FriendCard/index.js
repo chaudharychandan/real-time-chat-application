@@ -4,10 +4,11 @@ import './FriendCard.scss';
 
 const FriendCard = (props) => {
 	const { friend, selected, onSelect } = props;
+	const { name, avatar } = friend;
 
 	return (
 		<div className={`FriendCard ${selected ? 'selected' : ''}`} onClick={() => onSelect(friend)}>
-			{ friend.name }	
+			<img src={avatar} alt={name} /> <span>{ name }</span>
 		</div>
 	);
 }

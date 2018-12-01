@@ -1,9 +1,17 @@
 .FriendCard {
-	height: 60px;
-	padding: 10px;
+	height: 75px;
+	padding: 5px 10px;
 	cursor: pointer;
 	border-top: 1px solid #eee;
+	display: flex;
+	align-items: center;
 	&.selected {
-		background: #f4f4f4;
+		background: #f0f0f0;
+	}
+	img {
+		height: 50px;
+		width: 50px;
+		border-radius: 50%;
+		margin-right: 10px;
 	}
 }
