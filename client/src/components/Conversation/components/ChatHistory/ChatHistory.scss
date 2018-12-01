@@ -1,4 +1,15 @@
 .ChatHistory {
 	padding: 10px 20px;
-	background: rgb(199, 233, 235);;
+	background: rgb(199, 233, 235);
+	.chat-date {
+		text-align: center;
+		span {
+			display: inline-block;
+			padding: 5px 10px;
+			background-color: rgba(225, 245, 254, 0.92);
+			border-radius: 5px;
+			color: #444444;
+			font-size: 14px;
+		}
+	}
 }
